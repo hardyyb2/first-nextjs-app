@@ -1,0 +1,16 @@
+
+ul.post_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+a.post_link{
+    text-decoration: none;
+        &:visited{
+            color:violet;
+        }
+}
+
+

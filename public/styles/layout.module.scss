@@ -1,0 +1,50 @@
+// Variables
+$nav-color:indigo;
+$active-link-background :#a356e2;
+
+//Mixins
+@mixin flexDisplay($direction:row) {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: $direction;
+}
+@mixin activeLink{
+    background:$active-link-background;
+    border-bottom:5px solid #f5f5f5;
+    a{
+        color:#f5f5f5 !important; 
+    }
+}
+
+//styles
+.root{
+    @include flexDisplay(column);
+    }
+.header{
+    @include flexDisplay;
+    width:100%;
+    font-size:1.2rem;
+    background:$nav-color;
+        span{
+            @include flexDisplay;
+            padding:1em 3em;
+            flex:1 1 auto;
+                &.active_link{
+                     @include activeLink
+                }
+        }
+        a{
+            color:darkgrey;
+            text-decoration:none;
+            &:hover{
+                font-weight:bold;
+                color:lightgrey;
+            }
+        
+        }
+    
+}
+.footer{
+    padding:1em;
+}
