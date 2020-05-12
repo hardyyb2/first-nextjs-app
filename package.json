@@ -6,7 +6,11 @@
   "author": "Hardik Badola",
   "license": "MIT",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "deploy": "cd out && vercel --public"
   },
   "dependencies": {
     "axios": "^0.19.2",
