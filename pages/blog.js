@@ -8,7 +8,7 @@ const posts = ['reat', 'angular', 'vue']
 export const PostLink = ({ title }) => {
     return (
         <li>
-            <Link href={`/post?title=${title}`} >
+            <Link as={`${title}-post`} href={`/post?title=${title}`} >
                 <a className={classes.post_link}>{title}</a>
             </Link>
         </li>
