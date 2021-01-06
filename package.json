@@ -13,7 +13,7 @@
     "deploy": "cd out && vercel --public"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "next": "^9.3.6",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
